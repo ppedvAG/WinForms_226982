@@ -51,11 +51,18 @@ Partial Class Form1
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button15 = New System.Windows.Forms.Button()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.showSplittPanel2Button = New System.Windows.Forms.Button()
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -98,25 +105,21 @@ Partial Class Form1
         Me.PasteToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.toolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
         Me.HelpToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.showSplittPanel2Button = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
+        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ToolStripProgressBar1 = New System.Windows.Forms.ToolStripProgressBar()
         Me.TableLayoutPanel1.SuspendLayout()
+        Me.StatusStrip1.SuspendLayout()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -124,28 +127,31 @@ Partial Class Form1
         Me.Button1.AutoSize = True
         Me.Button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(47, 229)
+        Me.Button1.Location = New System.Drawing.Point(52, 463)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(368, 56)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Zeige Text in Label"
         Me.ToolTip1.SetToolTip(Me.Button1, "Klick mich!")
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(218, 187)
+        Me.Label1.Location = New System.Drawing.Point(234, 303)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.Size = New System.Drawing.Size(83, 32)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Label1"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(221, 203)
+        Me.TextBox1.Location = New System.Drawing.Point(241, 343)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(212, 39)
         Me.TextBox1.TabIndex = 2
         Me.ToolTip1.SetToolTip(Me.TextBox1, "Das ist deine Textbox")
         '
@@ -156,27 +162,30 @@ Partial Class Form1
         'DateTimePicker1
         '
         Me.DateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DateTimePicker1.Location = New System.Drawing.Point(105, 3)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(233, 7)
+        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(144, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(313, 39)
         Me.DateTimePicker1.TabIndex = 6
         '
         'DateTimePicker2
         '
         Me.DateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker2.Location = New System.Drawing.Point(105, 29)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(233, 60)
+        Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(144, 20)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(313, 39)
         Me.DateTimePicker2.TabIndex = 6
         '
         'DateTimePicker3
         '
         Me.DateTimePicker3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.DateTimePicker3.Location = New System.Drawing.Point(105, 55)
+        Me.DateTimePicker3.Location = New System.Drawing.Point(233, 113)
+        Me.DateTimePicker3.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.DateTimePicker3.Name = "DateTimePicker3"
-        Me.DateTimePicker3.Size = New System.Drawing.Size(144, 20)
+        Me.DateTimePicker3.Size = New System.Drawing.Size(313, 39)
         Me.DateTimePicker3.TabIndex = 6
         '
         'TableLayoutPanel1
@@ -186,30 +195,32 @@ Partial Class Form1
         Me.TableLayoutPanel1.BackColor = System.Drawing.Color.PeachPuff
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 325.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label3, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.DateTimePicker3, 1, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.Label4, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.DateTimePicker2, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.DateTimePicker1, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(18, 73)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(7, 40)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 4
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(252, 98)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(552, 208)
         Me.TableLayoutPanel1.TabIndex = 8
         '
         'Label2
         '
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(3, 32)
+        Me.Label2.Location = New System.Drawing.Point(6, 63)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(96, 13)
+        Me.Label2.Size = New System.Drawing.Size(215, 32)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "very Kurzes Datum"
         '
@@ -217,9 +228,10 @@ Partial Class Form1
         '
         Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(74, 58)
+        Me.Label3.Location = New System.Drawing.Point(166, 116)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(25, 13)
+        Me.Label3.Size = New System.Drawing.Size(55, 32)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Zeit"
         '
@@ -227,9 +239,10 @@ Partial Class Form1
         '
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(23, 6)
+        Me.Label4.Location = New System.Drawing.Point(54, 10)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(76, 13)
+        Me.Label4.Size = New System.Drawing.Size(167, 32)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Langes Datum"
         '
@@ -237,9 +250,11 @@ Partial Class Form1
         '
         Me.StatusStrip1.BackColor = System.Drawing.Color.Tomato
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 695)
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.ToolStripProgressBar1})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 923)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1264, 22)
+        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(2, 0, 30, 0)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1567, 42)
         Me.StatusStrip1.TabIndex = 9
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -258,18 +273,20 @@ Partial Class Form1
         Me.FlowLayoutPanel1.Controls.Add(Me.Button9)
         Me.FlowLayoutPanel1.Controls.Add(Me.Button10)
         Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 666)
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 867)
+        Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1264, 29)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1567, 56)
         Me.FlowLayoutPanel1.TabIndex = 10
         '
         'Button2
         '
         Me.Button2.AutoSize = True
         Me.Button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.Button2.Location = New System.Drawing.Point(3, 3)
+        Me.Button2.Location = New System.Drawing.Point(6, 7)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(54, 23)
+        Me.Button2.Size = New System.Drawing.Size(109, 42)
         Me.Button2.TabIndex = 11
         Me.Button2.Text = "Button2"
         Me.Button2.UseVisualStyleBackColor = True
@@ -278,9 +295,10 @@ Partial Class Form1
         '
         Me.Button3.AutoSize = True
         Me.Button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.Button3.Location = New System.Drawing.Point(63, 3)
+        Me.Button3.Location = New System.Drawing.Point(127, 7)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(54, 23)
+        Me.Button3.Size = New System.Drawing.Size(109, 42)
         Me.Button3.TabIndex = 12
         Me.Button3.Text = "Button3"
         Me.Button3.UseVisualStyleBackColor = True
@@ -289,9 +307,10 @@ Partial Class Form1
         '
         Me.Button4.AutoSize = True
         Me.Button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.Button4.Location = New System.Drawing.Point(123, 3)
+        Me.Button4.Location = New System.Drawing.Point(248, 7)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(54, 23)
+        Me.Button4.Size = New System.Drawing.Size(109, 42)
         Me.Button4.TabIndex = 13
         Me.Button4.Text = "Button4"
         Me.Button4.UseVisualStyleBackColor = True
@@ -300,9 +319,10 @@ Partial Class Form1
         '
         Me.Button5.AutoSize = True
         Me.Button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.Button5.Location = New System.Drawing.Point(183, 3)
+        Me.Button5.Location = New System.Drawing.Point(369, 7)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(54, 23)
+        Me.Button5.Size = New System.Drawing.Size(109, 42)
         Me.Button5.TabIndex = 14
         Me.Button5.Text = "Button5"
         Me.Button5.UseVisualStyleBackColor = True
@@ -311,9 +331,10 @@ Partial Class Form1
         '
         Me.Button6.AutoSize = True
         Me.Button6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.Button6.Location = New System.Drawing.Point(243, 3)
+        Me.Button6.Location = New System.Drawing.Point(490, 7)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(54, 23)
+        Me.Button6.Size = New System.Drawing.Size(109, 42)
         Me.Button6.TabIndex = 15
         Me.Button6.Text = "Button6"
         Me.Button6.UseVisualStyleBackColor = True
@@ -322,9 +343,10 @@ Partial Class Form1
         '
         Me.Button7.AutoSize = True
         Me.Button7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.Button7.Location = New System.Drawing.Point(303, 3)
+        Me.Button7.Location = New System.Drawing.Point(611, 7)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(54, 23)
+        Me.Button7.Size = New System.Drawing.Size(109, 42)
         Me.Button7.TabIndex = 16
         Me.Button7.Text = "Button7"
         Me.Button7.UseVisualStyleBackColor = True
@@ -333,9 +355,10 @@ Partial Class Form1
         '
         Me.Button8.AutoSize = True
         Me.Button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.Button8.Location = New System.Drawing.Point(363, 3)
+        Me.Button8.Location = New System.Drawing.Point(732, 7)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(54, 23)
+        Me.Button8.Size = New System.Drawing.Size(109, 42)
         Me.Button8.TabIndex = 17
         Me.Button8.Text = "Button8"
         Me.Button8.UseVisualStyleBackColor = True
@@ -344,9 +367,10 @@ Partial Class Form1
         '
         Me.Button9.AutoSize = True
         Me.Button9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.Button9.Location = New System.Drawing.Point(423, 3)
+        Me.Button9.Location = New System.Drawing.Point(853, 7)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(54, 23)
+        Me.Button9.Size = New System.Drawing.Size(109, 42)
         Me.Button9.TabIndex = 18
         Me.Button9.Text = "Button9"
         Me.Button9.UseVisualStyleBackColor = True
@@ -355,9 +379,10 @@ Partial Class Form1
         '
         Me.Button10.AutoSize = True
         Me.Button10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.Button10.Location = New System.Drawing.Point(483, 3)
+        Me.Button10.Location = New System.Drawing.Point(974, 7)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(60, 23)
+        Me.Button10.Size = New System.Drawing.Size(122, 42)
         Me.Button10.TabIndex = 19
         Me.Button10.Text = "Button10"
         Me.Button10.UseVisualStyleBackColor = True
@@ -366,9 +391,11 @@ Partial Class Form1
         '
         Me.GroupBox1.Controls.Add(Me.RadioButton3)
         Me.GroupBox1.Controls.Add(Me.RadioButton4)
-        Me.GroupBox1.Location = New System.Drawing.Point(305, 44)
+        Me.GroupBox1.Location = New System.Drawing.Point(587, 40)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 100)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(6, 7, 6, 7)
+        Me.GroupBox1.Size = New System.Drawing.Size(433, 246)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
@@ -376,9 +403,10 @@ Partial Class Form1
         'RadioButton3
         '
         Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(35, 37)
+        Me.RadioButton3.Location = New System.Drawing.Point(76, 91)
+        Me.RadioButton3.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(103, 26)
+        Me.RadioButton3.Size = New System.Drawing.Size(190, 36)
         Me.RadioButton3.TabIndex = 3
         Me.RadioButton3.TabStop = True
         Me.RadioButton3.Text = "RadioButton1"
@@ -387,9 +415,10 @@ Partial Class Form1
         'RadioButton4
         '
         Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(35, 63)
+        Me.RadioButton4.Location = New System.Drawing.Point(76, 155)
+        Me.RadioButton4.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(103, 26)
+        Me.RadioButton4.Size = New System.Drawing.Size(190, 36)
         Me.RadioButton4.TabIndex = 3
         Me.RadioButton4.TabStop = True
         Me.RadioButton4.Text = "RadioButton1"
@@ -400,14 +429,16 @@ Partial Class Form1
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TabControl1.Location = New System.Drawing.Point(0, 74)
+        Me.TabControl1.HotTrack = True
+        Me.TabControl1.Location = New System.Drawing.Point(0, 90)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1264, 592)
+        Me.TabControl1.Size = New System.Drawing.Size(1567, 777)
         Me.TabControl1.TabIndex = 12
         '
         'TabPage1
         '
+        Me.TabPage1.BackColor = System.Drawing.Color.White
         Me.TabPage1.Controls.Add(Me.Panel1)
         Me.TabPage1.Controls.Add(Me.TextBox2)
         Me.TabPage1.Controls.Add(Me.RadioButton2)
@@ -417,28 +448,99 @@ Partial Class Form1
         Me.TabPage1.Controls.Add(Me.TextBox1)
         Me.TabPage1.Controls.Add(Me.Label1)
         Me.TabPage1.Controls.Add(Me.Button1)
-        Me.TabPage1.Location = New System.Drawing.Point(8, 27)
+        Me.TabPage1.Location = New System.Drawing.Point(8, 46)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1248, 557)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(6, 7, 6, 7)
+        Me.TabPage1.Size = New System.Drawing.Size(1551, 723)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Tolle Controls"
-        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Indigo
+        Me.Panel1.Controls.Add(Me.Button12)
+        Me.Panel1.Controls.Add(Me.Button15)
+        Me.Panel1.Controls.Add(Me.Button14)
+        Me.Panel1.Controls.Add(Me.Button13)
+        Me.Panel1.Controls.Add(Me.Button11)
+        Me.Panel1.Location = New System.Drawing.Point(511, 317)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(433, 246)
+        Me.Panel1.TabIndex = 15
+        '
+        'Button12
+        '
+        Me.Button12.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button12.Location = New System.Drawing.Point(162, 57)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(109, 132)
+        Me.Button12.TabIndex = 1
+        Me.Button12.Text = "Button12"
+        Me.Button12.UseVisualStyleBackColor = True
+        '
+        'Button15
+        '
+        Me.Button15.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button15.Location = New System.Drawing.Point(271, 57)
+        Me.Button15.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(162, 132)
+        Me.Button15.TabIndex = 4
+        Me.Button15.Text = "Button15"
+        Me.Button15.UseVisualStyleBackColor = True
+        '
+        'Button14
+        '
+        Me.Button14.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Button14.Location = New System.Drawing.Point(162, 189)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(271, 57)
+        Me.Button14.TabIndex = 3
+        Me.Button14.Text = "Button14"
+        Me.Button14.UseVisualStyleBackColor = True
+        '
+        'Button13
+        '
+        Me.Button13.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Button13.Location = New System.Drawing.Point(0, 57)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(162, 189)
+        Me.Button13.TabIndex = 2
+        Me.Button13.Text = "Button13"
+        Me.Button13.UseVisualStyleBackColor = True
+        '
+        'Button11
+        '
+        Me.Button11.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button11.Location = New System.Drawing.Point(0, 0)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(433, 57)
+        Me.Button11.TabIndex = 0
+        Me.Button11.Text = "Button11"
+        Me.Button11.UseVisualStyleBackColor = True
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(559, 214)
+        Me.TextBox2.Location = New System.Drawing.Point(1019, 248)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(207, 133)
+        Me.TextBox2.Size = New System.Drawing.Size(444, 322)
         Me.TextBox2.TabIndex = 14
         '
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(620, 166)
+        Me.RadioButton2.Location = New System.Drawing.Point(1151, 130)
+        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(103, 26)
+        Me.RadioButton2.Size = New System.Drawing.Size(190, 36)
         Me.RadioButton2.TabIndex = 12
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "RadioButton1"
@@ -447,9 +549,10 @@ Partial Class Form1
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(620, 140)
+        Me.RadioButton1.Location = New System.Drawing.Point(1151, 66)
+        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(103, 26)
+        Me.RadioButton1.Size = New System.Drawing.Size(190, 36)
         Me.RadioButton1.TabIndex = 13
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "RadioButton1"
@@ -458,10 +561,11 @@ Partial Class Form1
         'TabPage2
         '
         Me.TabPage2.Controls.Add(Me.SplitContainer1)
-        Me.TabPage2.Location = New System.Drawing.Point(8, 27)
+        Me.TabPage2.Location = New System.Drawing.Point(8, 46)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1248, 557)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(6, 7, 6, 7)
+        Me.TabPage2.Size = New System.Drawing.Size(1551, 727)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Calender"
         '
@@ -469,7 +573,8 @@ Partial Class Form1
         '
         Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer1.ForeColor = System.Drawing.Color.YellowGreen
-        Me.SplitContainer1.Location = New System.Drawing.Point(3, 3)
+        Me.SplitContainer1.Location = New System.Drawing.Point(6, 7)
+        Me.SplitContainer1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.SplitContainer1.Name = "SplitContainer1"
         '
         'SplitContainer1.Panel1
@@ -482,26 +587,42 @@ Partial Class Form1
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.BackColor = System.Drawing.Color.MediumSpringGreen
-        Me.SplitContainer1.Size = New System.Drawing.Size(1242, 551)
-        Me.SplitContainer1.SplitterDistance = 413
+        Me.SplitContainer1.Size = New System.Drawing.Size(1539, 713)
+        Me.SplitContainer1.SplitterDistance = 511
+        Me.SplitContainer1.SplitterWidth = 9
         Me.SplitContainer1.TabIndex = 9
+        '
+        'showSplittPanel2Button
+        '
+        Me.showSplittPanel2Button.Dock = System.Windows.Forms.DockStyle.Top
+        Me.showSplittPanel2Button.Location = New System.Drawing.Point(0, 0)
+        Me.showSplittPanel2Button.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
+        Me.showSplittPanel2Button.Name = "showSplittPanel2Button"
+        Me.showSplittPanel2Button.Size = New System.Drawing.Size(511, 57)
+        Me.showSplittPanel2Button.TabIndex = 9
+        Me.showSplittPanel2Button.Text = "Panel 2 an/aus"
+        Me.showSplittPanel2Button.UseVisualStyleBackColor = True
         '
         'MonthCalendar1
         '
+        Me.MonthCalendar1.CalendarDimensions = New System.Drawing.Size(1, 2)
         Me.MonthCalendar1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MonthCalendar1.Location = New System.Drawing.Point(0, 0)
+        Me.MonthCalendar1.Margin = New System.Windows.Forms.Padding(20, 22, 20, 22)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.ShowWeekNumbers = True
         Me.MonthCalendar1.TabIndex = 8
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.White
         Me.MenuStrip1.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ToolsToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1264, 40)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(26, 10, 0, 10)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1567, 56)
         Me.MenuStrip1.TabIndex = 13
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -704,11 +825,13 @@ Partial Class Form1
         '
         'ToolStrip1
         '
+        Me.ToolStrip1.BackColor = System.Drawing.Color.White
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripButton, Me.OpenToolStripButton, Me.SaveToolStripButton, Me.PrintToolStripButton, Me.toolStripSeparator6, Me.CutToolStripButton, Me.CopyToolStripButton, Me.PasteToolStripButton, Me.toolStripSeparator7, Me.HelpToolStripButton})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 40)
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 56)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1264, 34)
+        Me.ToolStrip1.Padding = New System.Windows.Forms.Padding(0, 0, 4, 0)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1567, 34)
         Me.ToolStrip1.TabIndex = 14
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -794,94 +917,38 @@ Partial Class Form1
         Me.HelpToolStripButton.Size = New System.Drawing.Size(46, 28)
         Me.HelpToolStripButton.Text = "He&lp"
         '
-        'showSplittPanel2Button
+        'ToolStripStatusLabel1
         '
-        Me.showSplittPanel2Button.Dock = System.Windows.Forms.DockStyle.Top
-        Me.showSplittPanel2Button.Location = New System.Drawing.Point(0, 0)
-        Me.showSplittPanel2Button.Name = "showSplittPanel2Button"
-        Me.showSplittPanel2Button.Size = New System.Drawing.Size(413, 23)
-        Me.showSplittPanel2Button.TabIndex = 9
-        Me.showSplittPanel2Button.Text = "Panel 2 an/aus"
-        Me.showSplittPanel2Button.UseVisualStyleBackColor = True
+        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(240, 32)
+        Me.ToolStripStatusLabel1.Text = "ToolStripStatusLabel1"
         '
-        'Panel1
+        'ToolStripProgressBar1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Indigo
-        Me.Panel1.Controls.Add(Me.Button12)
-        Me.Panel1.Controls.Add(Me.Button15)
-        Me.Panel1.Controls.Add(Me.Button14)
-        Me.Panel1.Controls.Add(Me.Button13)
-        Me.Panel1.Controls.Add(Me.Button11)
-        Me.Panel1.Location = New System.Drawing.Point(175, 359)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(200, 100)
-        Me.Panel1.TabIndex = 15
-        '
-        'Button11
-        '
-        Me.Button11.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button11.Location = New System.Drawing.Point(0, 0)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(200, 23)
-        Me.Button11.TabIndex = 0
-        Me.Button11.Text = "Button11"
-        Me.Button11.UseVisualStyleBackColor = True
-        '
-        'Button12
-        '
-        Me.Button12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button12.Location = New System.Drawing.Point(75, 23)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(50, 54)
-        Me.Button12.TabIndex = 1
-        Me.Button12.Text = "Button12"
-        Me.Button12.UseVisualStyleBackColor = True
-        '
-        'Button13
-        '
-        Me.Button13.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button13.Location = New System.Drawing.Point(0, 23)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(75, 77)
-        Me.Button13.TabIndex = 2
-        Me.Button13.Text = "Button13"
-        Me.Button13.UseVisualStyleBackColor = True
-        '
-        'Button14
-        '
-        Me.Button14.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button14.Location = New System.Drawing.Point(75, 77)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(125, 23)
-        Me.Button14.TabIndex = 3
-        Me.Button14.Text = "Button14"
-        Me.Button14.UseVisualStyleBackColor = True
-        '
-        'Button15
-        '
-        Me.Button15.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button15.Location = New System.Drawing.Point(125, 23)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(75, 54)
-        Me.Button15.TabIndex = 4
-        Me.Button15.Text = "Button15"
-        Me.Button15.UseVisualStyleBackColor = True
+        Me.ToolStripProgressBar1.Name = "ToolStripProgressBar1"
+        Me.ToolStripProgressBar1.Size = New System.Drawing.Size(100, 30)
+        Me.ToolStripProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 32.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1264, 717)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(1567, 965)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Controls.Add(Me.StatusStrip1)
+        Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.FlowLayoutPanel1.ResumeLayout(False)
         Me.FlowLayoutPanel1.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
@@ -889,6 +956,7 @@ Partial Class Form1
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.SplitContainer1.Panel1.ResumeLayout(False)
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -897,7 +965,6 @@ Partial Class Form1
         Me.MenuStrip1.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -984,4 +1051,6 @@ Partial Class Form1
     Friend WithEvents Button14 As Button
     Friend WithEvents Button13 As Button
     Friend WithEvents Button11 As Button
+    Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
+    Friend WithEvents ToolStripProgressBar1 As ToolStripProgressBar
 End Class
