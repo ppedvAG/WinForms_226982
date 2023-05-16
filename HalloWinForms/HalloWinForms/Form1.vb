@@ -22,4 +22,8 @@
         SplitContainer1.Panel2Collapsed = Not SplitContainer1.Panel2Collapsed
 
     End Sub
+
+    Private Sub MyDateRangeControl1_Load(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
