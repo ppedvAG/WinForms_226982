@@ -23,7 +23,21 @@
 
     End Sub
 
-    Private Sub MyDateRangeControl1_Load(sender As Object, e As EventArgs)
+
+
+    Private Sub ÖffneBüchersucheToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ÖffneBüchersucheToolStripMenuItem.Click
+
+        Dim frm = New Form()
+        frm.Text = "Die beste Büchersuche der Welt"
+        frm.Width = 800
+        frm.Height = 600
+        frm.StartPosition = FormStartPosition.CenterParent
+
+        Dim gbs = New GoogleBooksAPISuche()
+        gbs.Dock = DockStyle.Fill
+        frm.Controls.Add(gbs)
+
+        frm.Show(Me)
 
     End Sub
 End Class

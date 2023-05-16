@@ -53,7 +53,6 @@ Partial Class Form1
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.MyDateRangeControl1 = New HalloWinForms.MyDateRangeControl()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.Button15 = New System.Windows.Forms.Button()
@@ -67,6 +66,8 @@ Partial Class Form1
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.showSplittPanel2Button = New System.Windows.Forms.Button()
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -108,8 +109,10 @@ Partial Class Form1
         Me.PasteToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.toolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
         Me.HelpToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.ÖffneBüchersucheToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MyDateRangeControl1 = New HalloWinForms.MyDateRangeControl()
         Me.ControlsByCode1 = New HalloWinForms.ControlsByCode()
+        Me.GoogleBooksAPISuche1 = New HalloWinForms.GoogleBooksAPISuche()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.FlowLayoutPanel1.SuspendLayout()
@@ -121,9 +124,10 @@ Partial Class Form1
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
+        Me.TabPage3.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
-        Me.TabPage3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -445,6 +449,7 @@ Partial Class Form1
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage3)
+        Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl1.HotTrack = True
         Me.TabControl1.Location = New System.Drawing.Point(0, 98)
@@ -473,19 +478,6 @@ Partial Class Form1
         Me.TabPage1.Size = New System.Drawing.Size(1551, 739)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Tolle Controls"
-        '
-        'MyDateRangeControl1
-        '
-        Me.MyDateRangeControl1.AutoSize = True
-        Me.MyDateRangeControl1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MyDateRangeControl1.Ende = New Date(2023, 5, 26, 0, 0, 0, 0)
-        Me.MyDateRangeControl1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MyDateRangeControl1.Location = New System.Drawing.Point(19, 489)
-        Me.MyDateRangeControl1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
-        Me.MyDateRangeControl1.Name = "MyDateRangeControl1"
-        Me.MyDateRangeControl1.Size = New System.Drawing.Size(536, 117)
-        Me.MyDateRangeControl1.Start = New Date(2023, 4, 27, 0, 0, 0, 0)
-        Me.MyDateRangeControl1.TabIndex = 16
         '
         'Panel1
         '
@@ -596,7 +588,7 @@ Partial Class Form1
         Me.TabPage2.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(6, 7, 6, 7)
-        Me.TabPage2.Size = New System.Drawing.Size(1551, 739)
+        Me.TabPage2.Size = New System.Drawing.Size(1551, 715)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Calender"
         '
@@ -618,7 +610,7 @@ Partial Class Form1
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.BackColor = System.Drawing.Color.MediumSpringGreen
-        Me.SplitContainer1.Size = New System.Drawing.Size(1539, 725)
+        Me.SplitContainer1.Size = New System.Drawing.Size(1539, 720)
         Me.SplitContainer1.SplitterDistance = 511
         Me.SplitContainer1.SplitterWidth = 9
         Me.SplitContainer1.TabIndex = 9
@@ -644,12 +636,34 @@ Partial Class Form1
         Me.MonthCalendar1.ShowWeekNumbers = True
         Me.MonthCalendar1.TabIndex = 8
         '
+        'TabPage3
+        '
+        Me.TabPage3.Controls.Add(Me.ControlsByCode1)
+        Me.TabPage3.Location = New System.Drawing.Point(8, 46)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(1551, 715)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "Controls by Code"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'TabPage4
+        '
+        Me.TabPage4.Controls.Add(Me.GoogleBooksAPISuche1)
+        Me.TabPage4.Location = New System.Drawing.Point(8, 46)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage4.Size = New System.Drawing.Size(1551, 715)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "Büchersuche"
+        Me.TabPage4.UseVisualStyleBackColor = True
+        '
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.White
         Me.MenuStrip1.GripMargin = New System.Windows.Forms.Padding(4)
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ToolsToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ToolsToolStripMenuItem, Me.HelpToolStripMenuItem, Me.ÖffneBüchersucheToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1567, 48)
@@ -947,16 +961,24 @@ Partial Class Form1
         Me.HelpToolStripButton.Size = New System.Drawing.Size(46, 28)
         Me.HelpToolStripButton.Text = "He&lp"
         '
-        'TabPage3
+        'ÖffneBüchersucheToolStripMenuItem
         '
-        Me.TabPage3.Controls.Add(Me.ControlsByCode1)
-        Me.TabPage3.Location = New System.Drawing.Point(8, 46)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1551, 715)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "Controls by Code"
-        Me.TabPage3.UseVisualStyleBackColor = True
+        Me.ÖffneBüchersucheToolStripMenuItem.Name = "ÖffneBüchersucheToolStripMenuItem"
+        Me.ÖffneBüchersucheToolStripMenuItem.Size = New System.Drawing.Size(238, 36)
+        Me.ÖffneBüchersucheToolStripMenuItem.Text = "Öffne Büchersuche"
+        '
+        'MyDateRangeControl1
+        '
+        Me.MyDateRangeControl1.AutoSize = True
+        Me.MyDateRangeControl1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MyDateRangeControl1.Ende = New Date(2023, 5, 26, 0, 0, 0, 0)
+        Me.MyDateRangeControl1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MyDateRangeControl1.Location = New System.Drawing.Point(19, 489)
+        Me.MyDateRangeControl1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
+        Me.MyDateRangeControl1.Name = "MyDateRangeControl1"
+        Me.MyDateRangeControl1.Size = New System.Drawing.Size(536, 117)
+        Me.MyDateRangeControl1.Start = New Date(2023, 4, 27, 0, 0, 0, 0)
+        Me.MyDateRangeControl1.TabIndex = 16
         '
         'ControlsByCode1
         '
@@ -965,8 +987,18 @@ Partial Class Form1
         Me.ControlsByCode1.Location = New System.Drawing.Point(3, 3)
         Me.ControlsByCode1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.ControlsByCode1.Name = "ControlsByCode1"
-        Me.ControlsByCode1.Size = New System.Drawing.Size(1545, 709)
+        Me.ControlsByCode1.Size = New System.Drawing.Size(1545, 728)
         Me.ControlsByCode1.TabIndex = 0
+        '
+        'GoogleBooksAPISuche1
+        '
+        Me.GoogleBooksAPISuche1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GoogleBooksAPISuche1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GoogleBooksAPISuche1.Location = New System.Drawing.Point(3, 3)
+        Me.GoogleBooksAPISuche1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
+        Me.GoogleBooksAPISuche1.Name = "GoogleBooksAPISuche1"
+        Me.GoogleBooksAPISuche1.Size = New System.Drawing.Size(1545, 709)
+        Me.GoogleBooksAPISuche1.TabIndex = 0
         '
         'Form1
         '
@@ -1000,11 +1032,12 @@ Partial Class Form1
         Me.SplitContainer1.Panel1.ResumeLayout(False)
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
+        Me.TabPage3.ResumeLayout(False)
+        Me.TabPage4.ResumeLayout(False)
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
-        Me.TabPage3.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1096,4 +1129,7 @@ Partial Class Form1
     Friend WithEvents MyDateRangeControl1 As MyDateRangeControl
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents ControlsByCode1 As ControlsByCode
+    Friend WithEvents TabPage4 As TabPage
+    Friend WithEvents GoogleBooksAPISuche1 As GoogleBooksAPISuche
+    Friend WithEvents ÖffneBüchersucheToolStripMenuItem As ToolStripMenuItem
 End Class
