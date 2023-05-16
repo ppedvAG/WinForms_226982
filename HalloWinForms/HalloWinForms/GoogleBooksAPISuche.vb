@@ -1,4 +1,5 @@
-﻿Imports System.Net.Http
+﻿Imports System.IO
+Imports System.Net.Http
 Imports Newtonsoft.Json
 
 Public Class GoogleBooksAPISuche
@@ -72,5 +73,34 @@ Public Class GoogleBooksAPISuche
                 e.Value = String.Join(", ", authorenList)
             End If
         End If
+    End Sub
+
+    Private Sub speichernButton_Click(sender As Object, e As EventArgs) Handles speichernButton.Click
+
+        If SaveFileDialog1.ShowDialog() = DialogResult.OK Then
+
+            Dim json = JsonConvert.SerializeObject(booksDataGridView.DataSource)
+
+            File.WriteAllText(SaveFileDialog1.FileName, json)
+
+        End If
+
+    End Sub
+
+    Private Sub ladenButton_Click(sender As Object, e As EventArgs) Handles ladenButton.Click
+
+        Dim openDialog = New OpenFileDialog()
+        openDialog.Filter = "Json-Datei|*.json|Alle Dateien|*.*"
+
+        If openDialog.ShowDialog() = DialogResult.OK Then
+
+            Dim json = File.ReadAllText(openDialog.FileName)
+
+            Dim volumeInfos = JsonConvert.DeserializeObject(Of List(Of Volumeinfo))(json)
+
+            booksDataGridView.DataSource = volumeInfos
+
+        End If
+
     End Sub
 End Class

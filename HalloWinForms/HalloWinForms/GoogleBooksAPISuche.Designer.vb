@@ -22,8 +22,8 @@ Partial Class GoogleBooksAPISuche
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.suchButton = New System.Windows.Forms.Button()
         Me.suchTextBox = New System.Windows.Forms.TextBox()
@@ -36,6 +36,7 @@ Partial Class GoogleBooksAPISuche
         Me.authorsColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.langColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.pagesFlowLayoutPanel = New System.Windows.Forms.FlowLayoutPanel()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.booksDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -144,19 +145,19 @@ Partial Class GoogleBooksAPISuche
         Me.booksDataGridView.AllowUserToAddRows = False
         Me.booksDataGridView.AllowUserToDeleteRows = False
         Me.booksDataGridView.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.booksDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.booksDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
         Me.booksDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.booksDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.booksDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.titleColumn, Me.authorsColumn, Me.langColumn})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.booksDataGridView.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.booksDataGridView.DefaultCellStyle = DataGridViewCellStyle10
         Me.booksDataGridView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.booksDataGridView.Location = New System.Drawing.Point(0, 112)
         Me.booksDataGridView.MultiSelect = False
@@ -203,6 +204,11 @@ Partial Class GoogleBooksAPISuche
         Me.pagesFlowLayoutPanel.Size = New System.Drawing.Size(1244, 0)
         Me.pagesFlowLayoutPanel.TabIndex = 3
         '
+        'SaveFileDialog1
+        '
+        Me.SaveFileDialog1.Filter = "Json-Datei|*.json"
+        Me.SaveFileDialog1.Title = "JSON File"
+        '
         'GoogleBooksAPISuche
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 32.0!)
@@ -237,4 +243,5 @@ Partial Class GoogleBooksAPISuche
     Friend WithEvents authorsColumn As DataGridViewTextBoxColumn
     Friend WithEvents langColumn As DataGridViewTextBoxColumn
     Friend WithEvents pagesFlowLayoutPanel As FlowLayoutPanel
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
 End Class
