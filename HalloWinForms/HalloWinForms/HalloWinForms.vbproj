@@ -85,6 +85,12 @@
     <Compile Include="ControlsByCode.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="CustomerManagement.Designer.vb">
+      <DependentUpon>CustomerManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerManagement.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
   <ItemGroup>
     <EmbeddedResource Include="ControlsByCode.resx">
       <DependentUpon>ControlsByCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerManagement.resx">
+      <DependentUpon>CustomerManagement.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
