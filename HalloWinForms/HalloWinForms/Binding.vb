@@ -1,5 +1,4 @@
-﻿Imports System.Windows.Forms.AxHost
-
+﻿
 Public Class Binding
 
     Sub New()
@@ -44,6 +43,11 @@ Public Class Binding
         If person IsNot Nothing Then
             e.Value = $"{person.Id} {person.Name} {person.BDate:d}"
         End If
+
+    End Sub
+
+    Private Sub DataGridView1_CellPainting(sender As Object, e As DataGridViewCellPaintingEventArgs) Handles DataGridView1.CellPainting
+        e.Graphics.FillEllipse(Brushes.Orange, e.CellBounds)
 
     End Sub
 End Class

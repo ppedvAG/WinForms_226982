@@ -196,6 +196,7 @@ Partial Class Binding
         Me.DataGridView1.Location = New System.Drawing.Point(295, 252)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 82
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(587, 191)
         Me.DataGridView1.TabIndex = 8
         '
