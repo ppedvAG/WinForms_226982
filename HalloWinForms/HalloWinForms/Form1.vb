@@ -7,6 +7,11 @@
 
         ' Add any initialization after the InitializeComponent() call.
 
+        Text = My.Resources.Titel
+
+        'Text = My.Settings.Text
+        BackColor = My.Settings.MeinFarbe
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

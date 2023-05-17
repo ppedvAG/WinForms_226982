@@ -89,5 +89,14 @@ Namespace My.Resources
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to SuperApp v0.1.
+        '''</summary>
+        Friend ReadOnly Property Titel() As String
+            Get
+                Return ResourceManager.GetString("Titel", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace
