@@ -79,6 +79,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Binding.Designer.vb">
+      <DependentUpon>Binding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Binding.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ControlsByCode.Designer.vb">
       <DependentUpon>ControlsByCode.vb</DependentUpon>
     </Compile>
@@ -128,6 +134,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Binding.resx">
+      <DependentUpon>Binding.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ControlsByCode.resx">
       <DependentUpon>ControlsByCode.vb</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +172,15 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EinTollesBild.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fies.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2AnyMz.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

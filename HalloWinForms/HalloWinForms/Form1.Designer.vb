@@ -72,6 +72,7 @@ Partial Class Form1
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.GoogleBooksAPISuche1 = New HalloWinForms.GoogleBooksAPISuche()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.CustomerManagement1 = New HalloWinForms.CustomerManagement()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -114,7 +115,8 @@ Partial Class Form1
         Me.PasteToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.toolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
         Me.HelpToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.CustomerManagement1 = New HalloWinForms.CustomerManagement()
+        Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.Binding1 = New HalloWinForms.Binding()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.FlowLayoutPanel1.SuspendLayout()
@@ -131,6 +133,7 @@ Partial Class Form1
         Me.TabPage5.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
+        Me.TabPage6.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -454,6 +457,7 @@ Partial Class Form1
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Controls.Add(Me.TabPage5)
+        Me.TabControl1.Controls.Add(Me.TabPage6)
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl1.HotTrack = True
         Me.TabControl1.Location = New System.Drawing.Point(0, 74)
@@ -705,6 +709,16 @@ Partial Class Form1
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Customer Management"
         Me.TabPage5.UseVisualStyleBackColor = True
+        '
+        'CustomerManagement1
+        '
+        Me.CustomerManagement1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CustomerManagement1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CustomerManagement1.Location = New System.Drawing.Point(3, 3)
+        Me.CustomerManagement1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
+        Me.CustomerManagement1.Name = "CustomerManagement1"
+        Me.CustomerManagement1.Size = New System.Drawing.Size(1545, 733)
+        Me.CustomerManagement1.TabIndex = 0
         '
         'MenuStrip1
         '
@@ -1015,15 +1029,26 @@ Partial Class Form1
         Me.HelpToolStripButton.Size = New System.Drawing.Size(46, 28)
         Me.HelpToolStripButton.Text = "He&lp"
         '
-        'CustomerManagement1
+        'TabPage6
         '
-        Me.CustomerManagement1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CustomerManagement1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CustomerManagement1.Location = New System.Drawing.Point(3, 3)
-        Me.CustomerManagement1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
-        Me.CustomerManagement1.Name = "CustomerManagement1"
-        Me.CustomerManagement1.Size = New System.Drawing.Size(1545, 733)
-        Me.CustomerManagement1.TabIndex = 0
+        Me.TabPage6.Controls.Add(Me.Binding1)
+        Me.TabPage6.Location = New System.Drawing.Point(8, 46)
+        Me.TabPage6.Name = "TabPage6"
+        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage6.Size = New System.Drawing.Size(1551, 739)
+        Me.TabPage6.TabIndex = 5
+        Me.TabPage6.Text = "Binding"
+        Me.TabPage6.UseVisualStyleBackColor = True
+        '
+        'Binding1
+        '
+        Me.Binding1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Binding1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Binding1.Location = New System.Drawing.Point(3, 3)
+        Me.Binding1.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
+        Me.Binding1.Name = "Binding1"
+        Me.Binding1.Size = New System.Drawing.Size(1545, 733)
+        Me.Binding1.TabIndex = 0
         '
         'Form1
         '
@@ -1064,6 +1089,7 @@ Partial Class Form1
         Me.MenuStrip1.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
+        Me.TabPage6.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1160,4 +1186,6 @@ Partial Class Form1
     Friend WithEvents ÖffneBüchersucheToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TabPage5 As TabPage
     Friend WithEvents CustomerManagement1 As CustomerManagement
+    Friend WithEvents TabPage6 As TabPage
+    Friend WithEvents Binding1 As Binding
 End Class
