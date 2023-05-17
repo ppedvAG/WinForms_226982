@@ -4,44 +4,40 @@ Imports System.Diagnostics.Eventing
 Public Class CustomerManagement
     Private Sub loadButton_Click(sender As Object, e As EventArgs) Handles loadButton.Click
 
-        'TODO rrror handling
-        'Todo Dispose
-        Dim con As SqlConnection
         Try
             Dim conString = "Server=(localdb)\mssqllocaldb;Database=Northwnd;Trusted_Connection=true"
 
-            con = New SqlConnection(conString)
-            con.Open()
+            Using con = New SqlConnection(conString)
 
-            Dim cmd = New SqlCommand("SELECT * FROM Customerserölkmfgrlökmlerkmglkerm")
-            cmd.Connection = con
+                con.Open()
 
-            Dim reader = cmd.ExecuteReader()
+                Using cmd = New SqlCommand("SELECT * FROM Customers")
 
-            Dim customers As New List(Of Customer)
+                    cmd.Connection = con
 
-            While reader.Read()
+                    Using reader = cmd.ExecuteReader()
 
-                Dim newCust = New Customer()
-                newCust.Id = reader.GetString(reader.GetOrdinal("CustomerID"))
-                newCust.CompanyName = reader.GetString(reader.GetOrdinal("CompanyName"))
-                newCust.ContactName = reader.GetString(reader.GetOrdinal("ContactName"))
-                customers.Add(newCust)
+                        Dim customers As New List(Of Customer)
 
-            End While
+                        While reader.Read()
 
+                            Dim newCust = New Customer()
+                            newCust.Id = reader.GetString(reader.GetOrdinal("CustomerID"))
+                            newCust.CompanyName = reader.GetString(reader.GetOrdinal("CompanyName"))
+                            newCust.ContactName = reader.GetString(reader.GetOrdinal("ContactName"))
+                            customers.Add(newCust)
 
-            DataGridView1.DataSource = customers
+                        End While
+                        DataGridView1.DataSource = customers
+
+                    End Using 'reader.Dispose()
+                End Using 'cmd.Dispose()  
+            End Using 'con.Dispose() -> con.Close()
 
         Catch ex As SqlException
             MessageBox.Show($"SQL ERORR: {ex.Message}", ":-(", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Catch ex As Exception
             MessageBox.Show($"Error: {ex.Message}", ":-(", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        Finally
-            If con Is Not Nothing Then
-                con.Close()
-            End If
-
         End Try
 
     End Sub
